@@ -1,4 +1,4 @@
-# tweets_sentimen_check
+# tweets_sentiment_check
 Twitter User's Sentiment Polarity Check using Python
 
 ## Python version
