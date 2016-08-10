@@ -10,3 +10,10 @@ Twitter User's Sentiment Polarity Check using Python
 
 	pip install textblob
 
+## Notes
+	
+	for avoiding the 
+		ValueError: time data 'date' dose not match formate
+
+	please remove the 1st line of all .csv files.
+
