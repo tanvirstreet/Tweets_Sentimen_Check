@@ -52,7 +52,7 @@ def get_all_tweets(screen_name):
 	outtweets = [[tweet.id_str, tweet.created_at, tweet.text.encode("utf-8")] for tweet in alltweets]
 	dataframe=pd.DataFrame(outtweets,columns=['twitter_id','date','tweet'])
 	# Creating a csv file which contain the Tweets as per the Data.
-	dataframe.to_csv("../data/%s_tweets.csv"%(screen_name),index=False)
+	dataframe.to_csv("../data/tweets/%s_.csv"%(screen_name),index=False)
 	
 	return
 
@@ -80,7 +80,7 @@ def sentimentCheck(text):
 
 def save_sentiment_polarities(username):
 	myList = []
-	with open('../data/%s_tweets.csv' % (username), 'r') as f:
+	with open('../data/tweets/%s_.csv' % (username), 'r') as f:
 		reader = csv.reader(f)
 		your_list = list(reader)
 
@@ -91,7 +91,7 @@ def save_sentiment_polarities(username):
 
 	csvdataframe=pd.DataFrame(myList,columns=['twitter_id','date','tweet','polarityPoints','avaragePolarity'])
 	# Create a csv file with the Sentiment Polarity..
-	csvdataframe.to_csv("../data/recover_%s_tweets.csv"%(username),index=False)
+	csvdataframe.to_csv("../data/emo/%s_.csv"%(username),index=False)
 	
 	pass
 
