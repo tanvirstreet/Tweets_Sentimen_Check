@@ -10,9 +10,13 @@ Twitter User's Sentiment Polarity Check using Python
 	pip install pandas
 	pip install textblob
 
+## Input
+	The Username you have to enter is the username of Twitter.
+	You can find the username from the Twitter Link like - 
+					https://twitter.com/USER_NAME
+	Input the USER_NAME portion from the link 
+
 ## Notes
-	
-	for avoiding the 
+	please remove the 1st line of all .csv files for avoiding the error -
 		ValueError: time data 'date' dose not match formate
-	please remove the 1st line of all .csv files.
 
